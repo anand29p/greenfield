@@ -1,0 +1,119 @@
+/* =============================================
+   THEME: Tech Forward — Dark Slate / Teal, Sora
+   ============================================= */
+:root {
+    --primary-color: #0A0F1F;
+    --primary-dark: #050811;
+    --accent-color: #00C2A8;
+    --background-color: #0F172A;
+    --text-color: #E2E8F0;
+    --text-color-inv: #FFFFFF;
+    --heading-font: 'Sora', sans-serif;
+    --body-font: 'Inter', sans-serif;
+    --cta-style: 8px;
+    --radius-style: 12px;
+    --radius-sm-style: 6px;
+
+    /* Semantic tokens mapped to Tech palette */
+    --green-900: #050811;
+    /* darkest slate — dark section bg */
+    --green-300: #00C2A8;
+    /* teal as the light accent        */
+    --cream: #0F172A;
+    /* dark equivalent of cream bg     */
+    --cream-dark: #111827;
+    /* slightly lighter dark slate     */
+    --white: #ffffff;
+    --gold-300: #00D4BB;
+    /* bright teal highlight           */
+}
+
+/* Gradient glow CTA */
+.btn--primary {
+    background: linear-gradient(135deg, var(--accent-color), #0075FF);
+    border: none;
+    color: #fff;
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color) 40%, transparent);
+}
+
+.btn--primary:hover {
+    box-shadow: 0 6px 25px color-mix(in srgb, var(--accent-color) 60%, transparent);
+    transform: translateY(-3px);
+}
+
+/* Transparent hero overlay nav with animated underline */
+.nav {
+    background: transparent;
+}
+
+.nav.scrolled {
+    background: rgba(5, 8, 17, 0.95);
+}
+
+.nav__links a {
+    position: relative;
+}
+
+.nav__links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav__links a:hover::after,
+.nav__links a.active::after {
+    width: 80%;
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    background: transparent;
+    color: var(--accent-color);
+}
+
+/* Dark backgrounds for cards */
+.philo-card,
+.prog-card,
+.campus-card,
+.leader-card,
+.info-card,
+.step,
+.dest-flag,
+.future-item,
+.contact__form {
+    background: color-mix(in srgb, #fff 4%, transparent);
+    border-color: color-mix(in srgb, #fff 8%, transparent);
+}
+
+/* Fix contrast for IB section inline styles */
+.philosophy {
+    background: var(--background-color);
+}
+
+.feature-strip {
+    background: color-mix(in srgb, var(--background-color), white 3%);
+    border-color: color-mix(in srgb, #fff 6%, transparent);
+}
+
+/* Form inputs in dark mode */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: color-mix(in srgb, #fff 5%, transparent);
+    border-color: color-mix(in srgb, #fff 15%, transparent);
+    color: var(--text-color);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color) 20%, transparent);
+    background: color-mix(in srgb, #fff 8%, transparent);
+}

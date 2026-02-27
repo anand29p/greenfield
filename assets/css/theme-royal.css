@@ -1,0 +1,81 @@
+/* =============================================
+   THEME: Royal — Deep Purple / Lavender, Playfair
+   ============================================= */
+:root {
+    --primary-color: #5B2D8E;
+    /* royal purple                */
+    --primary-dark: #2D0D5C;
+    /* deep indigo                 */
+    --accent-color: #B07FE8;
+    /* soft lavender               */
+    --background-color: #F8F4FF;
+    /* lavender tint               */
+    --text-color: #2D0D5C;
+    /* deep indigo text            */
+    --text-color-inv: #FFFFFF;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Inter', sans-serif;
+    --cta-style: 6px;
+    --radius-style: 1rem;
+    --radius-sm-style: 0.5rem;
+
+    /* Semantic tokens */
+    --green-900: #2D0D5C;
+    /* deep indigo dark bg           */
+    --green-300: #B07FE8;
+    /* lavender accent               */
+    --cream: #F8F4FF;
+    /* lavender-tint background      */
+    --cream-dark: #EDE4FA;
+    /* light purple section bg       */
+    --white: #ffffff;
+    --gold-300: #C9A8F0;
+    /* pale purple highlight         */
+}
+
+/* CTA — velvet gradient */
+.btn--primary {
+    background: linear-gradient(135deg, #5B2D8E, #7B3FB5);
+    border-color: transparent;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: linear-gradient(135deg, #42206A, #5B2D8E);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(91, 45, 142, 0.45);
+}
+
+/* Nav */
+.nav {
+    background: rgba(45, 13, 92, 0.92);
+    backdrop-filter: blur(16px);
+}
+
+.nav.scrolled {
+    background: rgba(45, 13, 92, 0.99);
+}
+
+.logo-mark {
+    background: linear-gradient(135deg, #5B2D8E, #B07FE8);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    color: #B07FE8;
+    background: rgba(176, 127, 232, 0.12);
+}
+
+.btn--nav {
+    background: #5B2D8E;
+    border-color: #5B2D8E;
+}
+
+.btn--nav:hover {
+    background: #42206A;
+}
+
+/* Accent overrides */
+.logo-text small {
+    color: rgba(255, 255, 255, 0.55);
+}

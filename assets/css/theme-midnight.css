@@ -1,0 +1,133 @@
+/* =============================================
+   THEME: Midnight — Ultra Dark / Silver Platinum
+   ============================================= */
+:root {
+    --primary-color: #3A3A5C;
+    /* midnight indigo             */
+    --primary-dark: #0D0D1A;
+    /* near-pure black             */
+    --accent-color: #A8B4C8;
+    /* cool silver                 */
+    --background-color: #111118;
+    /* very dark background        */
+    --text-color: #D8DCE8;
+    /* light silver text           */
+    --text-color-inv: #FFFFFF;
+    --heading-font: 'Sora', sans-serif;
+    --body-font: 'Inter', sans-serif;
+    --cta-style: 6px;
+    --radius-style: 0.875rem;
+    --radius-sm-style: 0.45rem;
+
+    /* Semantic tokens */
+    --green-900: #0D0D1A;
+    /* near-black bg                 */
+    --green-300: #A8B4C8;
+    /* silver accent                 */
+    --cream: #111118;
+    /* dark equivalent of cream      */
+    --cream-dark: #18181F;
+    /* very slightly lighter dark    */
+    --white: #ffffff;
+    --gold-300: #C8D0E0;
+    /* platinum highlight            */
+}
+
+/* CTA — silver-tipped gradient */
+.btn--primary {
+    background: linear-gradient(135deg, #3A3A5C, #5A5A80);
+    border-color: transparent;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: linear-gradient(135deg, #28284A, #3A3A5C);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(168, 180, 200, 0.2);
+}
+
+/* Nav */
+.nav {
+    background: rgba(13, 13, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(168, 180, 200, 0.08);
+}
+
+.nav.scrolled {
+    background: rgba(13, 13, 26, 0.99);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.6);
+}
+
+.logo-mark {
+    background: linear-gradient(135deg, #3A3A5C, #A8B4C8);
+}
+
+.nav__links a {
+    color: rgba(216, 220, 232, 0.65);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    color: #A8B4C8;
+    background: rgba(168, 180, 200, 0.1);
+}
+
+.btn--nav {
+    background: #3A3A5C;
+    border-color: rgba(168, 180, 200, 0.3);
+}
+
+.btn--nav:hover {
+    background: #28284A;
+}
+
+/* Dark cards */
+.philo-card,
+.prog-card,
+.campus-card,
+.leader-card,
+.info-card,
+.step,
+.dest-flag,
+.future-item,
+.contact__form {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(168, 180, 200, 0.1);
+}
+
+/* Form inputs */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(168, 180, 200, 0.15);
+    color: var(--text-color);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #A8B4C8;
+    box-shadow: 0 0 0 3px rgba(168, 180, 200, 0.15);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* Bright section bg */
+.philosophy {
+    background: var(--background-color);
+}
+
+.feature-strip {
+    background: rgba(255, 255, 255, 0.02);
+    border-color: rgba(168, 180, 200, 0.08);
+}
+
+/* Marquee and breadcrumb in dark mode */
+.marquee-wrap {
+    background: rgba(13, 13, 26, 0.9);
+}
+
+.breadcrumb {
+    background: rgba(24, 24, 31, 0.9);
+    border-color: rgba(168, 180, 200, 0.08);
+}

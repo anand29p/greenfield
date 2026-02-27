@@ -1,0 +1,29 @@
+/* =============================================
+   THEME: Progressive IB (Original Look)
+   ============================================= */
+:root {
+    --primary-color: #1e6633;
+    --primary-dark: #0a1f10;
+    --accent-color: #d4a017;
+    --background-color: #f9f5ee;
+    --text-color: #0a1f10;
+    --text-color-inv: #ffffff;
+    --heading-font: 'Cormorant Garamond', Georgia, serif;
+    --body-font: 'Inter', system-ui, sans-serif;
+    --cta-style: 100px;
+    --radius-style: 1rem;
+    --radius-sm-style: 0.5rem;
+
+    /* Semantic tokens — Progressive (green) palette */
+    --green-900: #0a1f10;
+    /* darkest green background       */
+    --green-300: #5fba7d;
+    /* light green accent             */
+    --cream: #f9f5ee;
+    /* warm light background          */
+    --cream-dark: #f0ebe0;
+    /* slightly darker warm bg        */
+    --white: #ffffff;
+    --gold-300: #e8c06a;
+    /* light gold highlight           */
+}

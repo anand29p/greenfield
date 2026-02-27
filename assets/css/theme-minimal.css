@@ -1,0 +1,106 @@
+/* =============================================
+   THEME: Minimal Modern — Black / White, DM Serif
+   ============================================= */
+:root {
+    --primary-color: #111111;
+    --primary-dark: #000000;
+    --accent-color: #1F3A2F;
+    --background-color: #FFFFFF;
+    --text-color: #111111;
+    --text-color-inv: #FFFFFF;
+    --heading-font: 'DM Serif Display', serif;
+    --body-font: 'IBM Plex Sans', sans-serif;
+    --cta-style: 0px;
+    --radius-style: 0px;
+    --radius-sm-style: 0px;
+
+    /* Semantic tokens mapped to Minimal palette */
+    --green-900: #000000;
+    /* pure black — dark section bg  */
+    --green-300: #444444;
+    /* mid grey as the light accent  */
+    --cream: #FFFFFF;
+    /* pure white background         */
+    --cream-dark: #F5F5F5;
+    /* off-white section bg          */
+    --white: #ffffff;
+    --gold-300: #888888;
+    /* silver/grey as highlight      */
+}
+
+/* Solid black square-edged CTA */
+.btn {
+    border-radius: 0;
+}
+
+.btn--primary {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+.btn--primary:hover {
+    background: #333;
+    border-color: #333;
+}
+
+/* Slim light-background navbar */
+.nav {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+}
+
+.nav.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo-mark {
+    background: #111;
+}
+
+.logo-text {
+    color: #111;
+}
+
+.logo-text small {
+    color: rgba(17, 17, 17, 0.5);
+}
+
+.nav__links a {
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    color: #111;
+    background: transparent;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.nav__burger span {
+    background: #111;
+}
+
+.btn--nav {
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}
+
+.btn--nav:hover {
+    background: #333;
+}
+
+#themeSwitcher {
+    background: rgba(17, 17, 17, 0.05);
+    border-color: rgba(17, 17, 17, 0.2);
+    color: #111;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23111'/%3E%3C/svg%3E");
+}
+
+#themeSwitcher option {
+    background: #fff;
+    color: #111;
+}

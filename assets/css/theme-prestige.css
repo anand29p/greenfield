@@ -1,0 +1,56 @@
+/* =============================================
+   THEME: Prestige — Navy / Gold, Playfair Display
+   ============================================= */
+:root {
+    --primary-color: #0B1F3A;
+    --primary-dark: #07152B;
+    --accent-color: #C6A75E;
+    --background-color: #F5F2EA;
+    --text-color: #0B1F3A;
+    --text-color-inv: #F5F2EA;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Inter', sans-serif;
+    --cta-style: 100px;
+    --radius-style: 0.75rem;
+    --radius-sm-style: 0.4rem;
+
+    /* Semantic tokens mapped to Prestige palette */
+    --green-900: #07152B;
+    /* deep navy — dark section bg   */
+    --green-300: #C6A75E;
+    /* gold as the "light accent"    */
+    --cream: #F5F2EA;
+    /* parchment background          */
+    --cream-dark: #EDE8DC;
+    /* slightly darker parchment     */
+    --white: #ffffff;
+    --gold-300: #D4BB7A;
+    /* lighter gold highlight        */
+}
+
+/* Gold outline CTA */
+.btn--primary {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn--primary:hover {
+    background: var(--accent-color);
+    color: #fff;
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 24px color-mix(in srgb, var(--accent-color) 35%, transparent);
+}
+
+/* Centered minimal nav */
+.nav {
+    padding: 1rem 0;
+}
+
+.nav__inner {
+    justify-content: center;
+}
+
+.nav__links {
+    margin: 0 2rem;
+}

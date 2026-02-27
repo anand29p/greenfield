@@ -1,0 +1,84 @@
+/* =============================================
+   THEME: Ocean — Deep Blue / Cyan, IBM Plex Sans
+   ============================================= */
+:root {
+    --primary-color: #0077B6;
+    /* ocean blue                  */
+    --primary-dark: #03045E;
+    /* deep navy                   */
+    --accent-color: #00B4D8;
+    /* bright cyan                 */
+    --background-color: #F0F8FF;
+    /* alice blue                  */
+    --text-color: #03045E;
+    /* deep navy text              */
+    --text-color-inv: #FFFFFF;
+    --heading-font: 'Cormorant Garamond', Georgia, serif;
+    --body-font: 'IBM Plex Sans', sans-serif;
+    --cta-style: 50px;
+    --radius-style: 1.25rem;
+    --radius-sm-style: 0.6rem;
+
+    /* Semantic tokens */
+    --green-900: #03045E;
+    /* deep navy dark bg             */
+    --green-300: #00B4D8;
+    /* bright cyan accent            */
+    --cream: #F0F8FF;
+    /* alice blue background         */
+    --cream-dark: #DDF3FC;
+    /* light blue-tint section bg    */
+    --white: #ffffff;
+    --gold-300: #48CAE4;
+    /* sky blue highlight            */
+}
+
+/* CTA — wave gradient */
+.btn--primary {
+    background: linear-gradient(135deg, #0077B6, #00B4D8);
+    border-color: transparent;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: linear-gradient(135deg, #005A8E, #0077B6);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 119, 182, 0.4);
+}
+
+/* Nav */
+.nav {
+    background: rgba(3, 4, 94, 0.92);
+    backdrop-filter: blur(16px);
+}
+
+.nav.scrolled {
+    background: rgba(3, 4, 94, 0.99);
+}
+
+.logo-mark {
+    background: linear-gradient(135deg, #0077B6, #00B4D8);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    color: #48CAE4;
+    background: rgba(0, 180, 216, 0.12);
+}
+
+.btn--nav {
+    background: #0077B6;
+    border-color: #0077B6;
+}
+
+.btn--nav:hover {
+    background: #005A8E;
+}
+
+/* Form inputs */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00B4D8;
+    box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.18);
+}

@@ -1,0 +1,76 @@
+/* =============================================
+   THEME: Forest — Dark Emerald / Warm Gold, Sora
+   ============================================= */
+:root {
+    --primary-color: #1B5E3B;
+    /* deep emerald                */
+    --primary-dark: #0C2E1A;
+    /* near-black forest           */
+    --accent-color: #D4A853;
+    /* warm old gold               */
+    --background-color: #F2F7F3;
+    /* very light mint             */
+    --text-color: #0C2E1A;
+    /* forest dark text            */
+    --text-color-inv: #F2F7F3;
+    --heading-font: 'Cormorant Garamond', Georgia, serif;
+    --body-font: 'Sora', sans-serif;
+    --cta-style: 4px;
+    --radius-style: 0.75rem;
+    --radius-sm-style: 0.375rem;
+
+    /* Semantic tokens */
+    --green-900: #0C2E1A;
+    /* forest near-black bg          */
+    --green-300: #4CAF7D;
+    /* bright forest green accent    */
+    --cream: #F2F7F3;
+    /* light mint background         */
+    --cream-dark: #E1EDE5;
+    /* deeper mint section bg        */
+    --white: #ffffff;
+    --gold-300: #E8C27A;
+    /* lighter warm gold highlight   */
+}
+
+/* CTA — forest gradient */
+.btn--primary {
+    background: linear-gradient(135deg, #1B5E3B, #237A4B);
+    border-color: transparent;
+    color: #F2F7F3;
+}
+
+.btn--primary:hover {
+    background: linear-gradient(135deg, #124530, #1B5E3B);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(27, 94, 59, 0.4);
+}
+
+/* Nav */
+.nav {
+    background: rgba(12, 46, 26, 0.93);
+    backdrop-filter: blur(16px);
+}
+
+.nav.scrolled {
+    background: rgba(12, 46, 26, 0.99);
+}
+
+.logo-mark {
+    background: linear-gradient(135deg, #1B5E3B, #D4A853);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    color: #D4A853;
+    background: rgba(212, 168, 83, 0.12);
+}
+
+.btn--nav {
+    background: #1B5E3B;
+    border-color: #1B5E3B;
+}
+
+.btn--nav:hover {
+    background: #124530;
+}

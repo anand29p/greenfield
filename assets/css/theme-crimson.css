@@ -1,0 +1,88 @@
+/* =============================================
+   THEME: Crimson — Deep Red / Cream, DM Serif
+   ============================================= */
+:root {
+    --primary-color: #9B1B30;
+    /* deep crimson                */
+    --primary-dark: #5C0A18;
+    /* dark maroon                 */
+    --accent-color: #D4A017;
+    /* antique gold                */
+    --background-color: #FDF5F0;
+    /* warm ivory                  */
+    --text-color: #2A0A10;
+    /* deep maroon text            */
+    --text-color-inv: #FDF5F0;
+    --heading-font: 'DM Serif Display', serif;
+    --body-font: 'Inter', sans-serif;
+    --cta-style: 2px;
+    --radius-style: 0.5rem;
+    --radius-sm-style: 0.25rem;
+
+    /* Semantic tokens */
+    --green-900: #5C0A18;
+    /* dark maroon bg                */
+    --green-300: #D4A017;
+    /* gold as accent                */
+    --cream: #FDF5F0;
+    /* warm ivory background         */
+    --cream-dark: #F5E8DF;
+    /* warm beige section bg         */
+    --white: #ffffff;
+    --gold-300: #E8C06A;
+    /* warm gold highlight           */
+}
+
+/* CTA — crimson */
+.btn--primary {
+    background: #9B1B30;
+    border-color: #9B1B30;
+    color: #FDF5F0;
+}
+
+.btn--primary:hover {
+    background: #7B1525;
+    border-color: #7B1525;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(155, 27, 48, 0.4);
+}
+
+/* Nav */
+.nav {
+    background: rgba(92, 10, 24, 0.93);
+    backdrop-filter: blur(16px);
+}
+
+.nav.scrolled {
+    background: rgba(92, 10, 24, 0.99);
+}
+
+.logo-mark {
+    background: linear-gradient(135deg, #9B1B30, #D4A017);
+}
+
+.nav__links a:hover,
+.nav__links a.active {
+    color: #D4A017;
+    background: rgba(212, 160, 23, 0.12);
+}
+
+.btn--nav {
+    background: #9B1B30;
+    border-color: #9B1B30;
+    color: #FDF5F0;
+}
+
+.btn--nav:hover {
+    background: #7B1525;
+}
+
+/* Sharp squared cards */
+.info-card,
+.campus-card,
+.leader-card,
+.step,
+.contact__form,
+.future-item {
+    border-left: 3px solid #9B1B30;
+}

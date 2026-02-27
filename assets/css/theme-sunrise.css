@@ -1,0 +1,79 @@
+/* =============================================
+   THEME: Sunrise — Warm Coral / Amber, Sora
+   ============================================= */
+:root {
+    --primary-color: #C84B31;
+    /* deep coral-red              */
+    --primary-dark: #7A1F0E;
+    /* dark mahogany               */
+    --accent-color: #F0A500;
+    /* warm amber                  */
+    --background-color: #FFF8F0;
+    /* warm white                  */
+    --text-color: #2D1A0E;
+    /* dark warm brown             */
+    --text-color-inv: #FFFFFF;
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Inter', sans-serif;
+    --cta-style: 8px;
+    --radius-style: 1rem;
+    --radius-sm-style: 0.5rem;
+
+    /* Semantic tokens */
+    --green-900: #7A1F0E;
+    /* mahogany dark bg              */
+    --green-300: #F0A500;
+    /* amber as accent               */
+    --cream: #FFF8F0;
+    /* warm white background         */
+    --cream-dark: #FFE8D6;
+    /* peach-tinted section bg       */
+    --white: #ffffff;
+    --gold-300: #F5C842;
+    /* bright golden highlight       */
+}
+
+/* CTA — coral gradient */
+.btn--primary {
+    background: linear-gradient(135deg, #C84B31, #E8622E);
+    border-color: transparent;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background: linear-gradient(135deg, #B03D24, #C84B31);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(200, 75, 49, 0.4);
+}
+
+/* Nav — warm dark */
+.nav {
+    background: rgba(122, 31, 14, 0.92);
+    backdrop-filter: blur(16px);
+}
+
+.nav.scrolled {
+    background: rgba(122, 31, 14, 0.99);
+}
+
+/* Logo mark */
+.logo-mark {
+    background: linear-gradient(135deg, #C84B31, #F0A500);
+}
+
+/* Active nav link */
+.nav__links a:hover,
+.nav__links a.active {
+    color: #F0A500;
+    background: rgba(240, 165, 0, 0.12);
+}
+
+/* Apply Now btn */
+.btn--nav {
+    background: #C84B31;
+    border-color: #C84B31;
+}
+
+.btn--nav:hover {
+    background: #B03D24;
+}
