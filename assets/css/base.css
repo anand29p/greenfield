@@ -470,6 +470,7 @@ img {
 }
 
 .hero__inner {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -551,6 +552,7 @@ img {
     font-weight: 700;
     color: var(--text-color-inv);
     line-height: 1;
+    font-variant-numeric: tabular-nums;
 }
 
 .stat__plus {
